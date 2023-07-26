@@ -11,7 +11,7 @@
 
     --font-size-18pt:16px;
     --font-size-30pt:24px;
-    --font-size-49pt:50px;
+    --font-size-49pt:55px;
 
     --font-weight-regular:400;
     --font-weight-bold:700;
@@ -26,7 +26,6 @@
 body{
     width: 100vw;
     height:100vh;
-    background-color: aquamarine;
 }
 
 @media only screen and (max-width: 992px) {
