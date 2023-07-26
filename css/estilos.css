@@ -1,0 +1,50 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+
+:root{
+--font-family-Mulish:'Mulish', sans-serif;
+
+--color-blue-dark:#04146c;
+--color-blue-france:#0a2ff1;
+
+--font-weight-regular:400;
+--font-weight-bold:700;
+
+--font-size-18pt:24px;
+--font-size-37pt:49px;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: max-content;
+}
+
+@media only screen and (min-width: 992px) {
+    body {
+        height: 100vh;
+    }
+  }
+
+
+.texto>h1{
+    font-size: var(--font-size-37pt);
+    font-weight: var(--font-weight-bold);
+    color:var(--color-blue-dark);
+}
+
+.texto>p{
+    font-size: var(--font-size-18pt);
+    font-weight: var(--font-weight-regular);
+    color:var(--color-blue-dark);
+}
+
+.texto>p>span{
+    font-weight: var(--font-weight-bold);
+    color:var(--color-blue-france);
+}
