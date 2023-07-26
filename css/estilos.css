@@ -1,0 +1,75 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+
+:root{
+
+    --font-Mulish:'Mulish', sans-serif;
+    
+    --font-color-blue-dark:#04146c;
+    --font-color-blue-france:#0a2ff1;
+
+    --font-size-18pt:16px;
+    --font-size-30pt:24px;
+    --font-size-49pt:50px;
+
+    --font-weight-regular:400;
+    --font-weight-bold:700;
+
+
+}
+
+*{
+    font-family: var(--font-Mulish);
+}
+
+body{
+    width: 100vw;
+    height:100vh;
+    background-color: aquamarine;
+}
+
+@media only screen and (max-width: 992px) {
+    body {
+        height:max-content;
+ 
+    }
+  }
+
+.fila{
+    height: 100vh;
+    border: 1px solid red;
+}
+
+.titulo-page{
+font-weight: var(--font-weight-bold);
+font-size: var(--font-size-49pt);
+color:var(--font-color-blue-dark);
+}
+
+.card-title{
+    font-size: var(--font-size-30pt);
+    font-weight: var(--font-weight-bold)!important;
+    color:var(--font-color-blue-france) !important;
+}
+
+.card-body>h6{
+    font-size: var(--font-size-18pt);
+    font-weight: var(--font-weight-bold)!important;
+    color:var(--font-color-blue-dark)!important;
+}
+
+.card-text{
+    font-size: var(--font-size-18pt);
+    font-weight: var(--font-weight-regular)!important;
+    color:var(--font-color-blue-dark)!important;
+}
+
+.boton{
+    font-size: var(--font-size-18pt);
+    font-weight: var(--font-weight-regular)!important;
+    color:var(--font-color-blue-dark)!important;
+    border:2px solid var(--font-color-blue-france)!important;
+    border-radius: 0!important;
+}
+
