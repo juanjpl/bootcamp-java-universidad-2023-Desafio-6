@@ -1,0 +1,60 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+
+:root{
+--font-family-Mulish:'Mulish', sans-serif;
+
+--color-blue-dark:#04146c;
+--color-blue-boton:#5974ff;
+--color-blue-input:#8a9af1;
+
+--font-weight-regular:400;
+--font-weight-semibold:600;
+--font-weight-bold:700;
+
+--font-size-18pt:24px;
+--font-size-13pt:17px;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-size: var(--font-size-18pt);
+    color:var(--color-blue-dark);
+}
+
+body{
+    width: 100vw;
+    height:  100vh;
+}
+
+
+
+  .form-label{
+    font-weight: var(--font-weight-semibold);
+  }
+
+  .form-text{
+    font-size: var(--font-size-13pt);
+    font-style: italic;
+    color:var(--color-blue-dark)!important;
+  }
+
+  .form-check-label{
+    font-weight: var(--font-weight-regular);
+
+  }
+
+  .btn{
+    background-color: var(--color-blue-boton)!important;
+   font-weight: var(--font-weight-bold)!important;
+   color:#ffffff!important;
+   width: 150px;
+   height: 50px;
+  }
+  
+  .form-control,
+  .form-check-input{
+    border:1px solid var(--color-blue-input)!important;
+  }
