@@ -32,8 +32,11 @@ datos[12]['ingreso']=acc_ingreso;
 datos[12]['egreso']=acc_egreso;
 
 
-console.table(datos)
+console.table(datos);
 
+(( acc_ingreso-acc_egreso) < 0 )
+? console.log('CUIDADO! Este flujo de ingresos genera perdidas!')
+: console.log('FELICITACIONES! Este flujo de ingresos genera ganancias!')
 
 
 
