@@ -1,6 +1,3 @@
-//pedido de datos
-import datos from './datos.js';
-
 
 
 const verificarIngreso = (texto) => {
@@ -8,7 +5,7 @@ const verificarIngreso = (texto) => {
   
     do {
       ingreso = Number(prompt(`${texto}`));
-    } while (!ingreso || ingreso < 0);
+    } while (!ingreso || ingreso < 0 ||ingreso>=120);
   
     return ingreso;
   };
@@ -17,10 +14,6 @@ const edad= verificarIngreso('Buenos días, ingrese su edad:');
 
 console.log(edad);
 
-for (let i=0; i < datos.length; i++){
-    datos[i]['interes']= ((datos[i]['capital'])*(datos[i]['plazo'])*(datos[i]['tasa']))/100;
-}
+edad>=18 ? console.log('Bienvenido----->Eres mayor de edad'):console.log('Aún no tienes edad para ser mayor')
 
 
-
-console.table(datos);
