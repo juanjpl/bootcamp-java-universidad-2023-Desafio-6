@@ -1,20 +1,7 @@
 //pedido de datos
 import datos from "./datos.js";
 
-const verificarIngreso = (texto) => {
-  let ingreso;
 
-  do {
-    ingreso = Number(prompt(`${texto}`));
-  } while (!ingreso || ingreso < 0);
-
-  return ingreso;
-};
-
-for (let i = 0; i < datos.length; i++) {
-  datos[i]["interes"] =
-    (datos[i]["capital"] * datos[i]["plazo"] * datos[i]["tasa"]) / 100;
-}
 
 const verificarDatos = (datos) => {
  
@@ -35,7 +22,7 @@ const verificarDatos = (datos) => {
       ) {
         //console.log(typeof array[i]["ingreso"]);
         console.log(array[i]["capital"]);
-        //acc_ingreso = acc_ingreso + array[i]["plazo"];
+       
         if (
           array[i].hasOwnProperty("plazo") &&
           typeof array[i]["plazo"] === "number"
@@ -44,7 +31,7 @@ const verificarDatos = (datos) => {
           
           console.log(array[i]["plazo"]);
 
-          //acc_egreso = acc_egreso + array[i]["egreso"];
+          
           if (
             array[i].hasOwnProperty("tasa") &&
             typeof array[i]["tasa"] === "number"
@@ -53,7 +40,24 @@ const verificarDatos = (datos) => {
             
             console.log(array[i]["tasa"]);
   
-            //acc_egreso = acc_egreso + array[i]["egreso"];
+            if (
+              !array[i].hasOwnProperty("interes") 
+            ) {
+              //console.log(typeof array[i]["ingreso"]);
+              
+              
+              console.log('La propiedad INTERES NO EXISTE');
+              //array[i] = Object.assign({'interes': 1});
+              array[i]["interes"] = (array[i]["capital"] * array[i]["plazo"] * array[i]["tasa"]) / 100;
+              console.log(array[i]['interes']);
+            
+             
+            } else {
+              console.log("La propiedad INTERES SI EXISTE");
+              array[i]["tasa"];
+              console.log(array[i]['interes']);
+            }
+          
            
           } else {
             console.log("error en la carga de datos de Tasa");

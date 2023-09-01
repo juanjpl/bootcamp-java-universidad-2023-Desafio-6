@@ -31,16 +31,19 @@ const datos1 = [
       mes: 'Enero',
       ingreso: 10000,
       egreso: 1000,
+      interes:0
     },
     {
       mes: "Febrero",
       ingreso: 15000,
       egreso: 1500,
+      interes:0
     },
     {
       mes: "Marzo",
       ingreso: 40000,
       egreso: 4000,
+      interes:0
     },
   ];
   
