@@ -1,6 +1,8 @@
 //pedido de datos
 import datos from './datos.js';
 
+
+
 const verificarIngreso = (texto) => {
     let ingreso;
   
@@ -16,6 +18,12 @@ for (let i=0; i < datos.length; i++){
     datos[i]['interes']= ((datos[i]['capital'])*(datos[i]['plazo'])*(datos[i]['tasa']))/100;
 }
 
+
+
+
+const calcularInteres=(datos)=>{
+
+}
 
 
 console.table(datos);
