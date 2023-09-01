@@ -6,7 +6,7 @@ import datos from "./datos.js";
 const verificarDatos = (datos) => {
  
 
-  console.log('Carga de los datos presentados ')
+  console.log('Carga de los datos modificados ')
   console.log('=====================================')
  
   let array = datos;
@@ -14,14 +14,14 @@ const verificarDatos = (datos) => {
   for (let i = 0; i < array.length; i++) {
     if (array[i].hasOwnProperty("nombre") && typeof array[i]["nombre"] === "string") {
       //console.log(typeof array[i]["ingreso"]);
-      console.log(array[i]["nombre"]);
+      //console.log(array[i]["nombre"]);
 
       if (
         array[i].hasOwnProperty("capital") &&
         typeof array[i]["capital"] === "number"
       ) {
         //console.log(typeof array[i]["ingreso"]);
-        console.log(array[i]["capital"]);
+        //console.log(array[i]["capital"]);
        
         if (
           array[i].hasOwnProperty("plazo") &&
@@ -29,7 +29,7 @@ const verificarDatos = (datos) => {
         ) {
           //console.log(typeof array[i]["ingreso"]);
           
-          console.log(array[i]["plazo"]);
+          //console.log(array[i]["plazo"]);
 
           
           if (
@@ -38,7 +38,7 @@ const verificarDatos = (datos) => {
           ) {
             //console.log(typeof array[i]["ingreso"]);
             
-            console.log(array[i]["tasa"]);
+            //console.log(array[i]["tasa"]);
   
             if (
               !array[i].hasOwnProperty("interes") 
@@ -46,16 +46,16 @@ const verificarDatos = (datos) => {
               //console.log(typeof array[i]["ingreso"]);
               
               
-              console.log('La propiedad INTERES NO EXISTE');
+              //console.log('La propiedad INTERES NO EXISTE');
               //array[i] = Object.assign({'interes': 1});
               array[i]["interes"] = (array[i]["capital"] * array[i]["plazo"] * array[i]["tasa"]) / 100;
-              console.log(array[i]['interes']);
+              //console.log(array[i]['interes']);
             
              
             } else {
-              console.log("La propiedad INTERES SI EXISTE");
+              //console.log("La propiedad INTERES SI EXISTE");
               array[i]["tasa"];
-              console.log(array[i]['interes']);
+              //console.log(array[i]['interes']);
             }
           
            
@@ -75,8 +75,8 @@ const verificarDatos = (datos) => {
   }
 
 
-  console.log('=====================================')
-  console.log('El resultado de la funcion es.... ')
+  //console.log('=====================================')
+  //console.log('El resultado de la funcion es.... ')
 //console.log(array)
 
 return array;
@@ -86,6 +86,10 @@ return array;
 
 const calcularInteres = (datos) => {
   let respuesta = Array.isArray(datos);
+  console.log('Carga de los datos cargados ')
+  console.log('=====================================')
+  console.table(datos);
+
   let arrayDevuelvo = [];
   !respuesta
     ? console.log("Haz ingresado un formato distinto a ARRAY")
@@ -95,4 +99,5 @@ const calcularInteres = (datos) => {
 };
 
 const resultado = calcularInteres(datos);
-console.log(resultado);
+
+console.table(resultado);
